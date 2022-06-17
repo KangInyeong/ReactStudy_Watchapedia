@@ -1,0 +1,15 @@
+.first {
+    display: flex;
+    width: 96%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer {
+    font-size: 12px;
+    background-color: black;
+    color: beige;
+  }
