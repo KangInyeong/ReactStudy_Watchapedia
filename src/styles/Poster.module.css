@@ -1,0 +1,19 @@
+.poster img {
+    width: 222px;
+    height: 323px;
+}
+
+.posterset ul{
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+    justify-content: center;
+}
+
+.posterset li{
+    margin-left: 30px;
+}
+
+.posterset {
+    align-items: center;
+}
