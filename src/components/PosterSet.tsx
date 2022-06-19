@@ -10,6 +10,7 @@ export const PosterSet = () => {
                 <li><Poster /></li>
                 <li><Poster /></li>
                 <li><Poster /></li>
+                <li><Poster /></li>
             </ul>
         </div>
     )
