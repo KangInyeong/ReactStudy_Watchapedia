@@ -44,7 +44,7 @@
 }
 
 .posterInfo{
-    display: none;
+    display: flex;
     color: #292a32;
     padding-bottom: 1px;
     font-size: 14px;
@@ -53,7 +53,7 @@
     -moz-letter-spacing: normal;
     -ms-letter-spacing: normal;
     letter-spacing: normal;
-    line-height: 21px;
+    line-height: 21px; 
 }
 
 .posterScore{
@@ -79,9 +79,7 @@
     -ms-letter-spacing: 0;
     letter-spacing: 0;
     line-height: 14px;
-    height: 15px
-px
-;
+    height: 15px;
 }
 
 .posterset ul{
@@ -97,4 +95,9 @@ px
 
 .posterset {
     align-items: center;
+}
+
+.posterset h2{
+    text-align: left;
+    margin-left: 20px;
 }

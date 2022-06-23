@@ -7,6 +7,7 @@ import NotFound from "../pages/NotFound";
 
 import { useRecoilValue } from "recoil";
 import { menuAtom } from "../Atom";
+import Specific from '../layout/Specific';
 import { PosterSet } from '../components/PosterSet';
 import { Routes, Route } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ export const Page = () => {
             <Home menu={Menu}/>
             <Routes>
                 <Route path="/movie" element={<PosterSet/>} />
+                <Route path="/movie/*" element={<Specific/>} />
                 <Route path="/score" element={<Score/>} />
                 <Route path="/mypage" element={<Mypage/>} />
                 <Route path="/" element={<PosterSet/>} />

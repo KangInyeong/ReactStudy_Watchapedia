@@ -48,3 +48,73 @@
   width: 300px;
 }
 
+.modal {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  text-align: left;
+  width: 375px;
+  height: auto;
+  min-height: 540px;
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.modalImg{
+  text-align: center;
+  margin: 0px 0px 14px;
+  overflow: hidden;
+}
+
+.modal h2{
+  font-size: 17px;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+  font-weight: 700;
+  text-align: center;
+  margin: 24px 0px 20px;
+}
+
+.modal input{
+  display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background: rgb(245, 245, 245);
+    box-sizing: border-box;
+    width: 100%;
+    height: 44px;
+    padding: 0px 12px;
+    border-radius: 6px;
+}
+
+.modalSignup{
+  padding: 0px;
+    border: none;
+    cursor: pointer;
+    background: rgb(255, 47, 110);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.7px;
+    line-height: 22px;
+    width: 100%;
+    height: 44px;
+    border-radius: 6px;
+    margin: 16px 0px 0px;
+}
+
+.modalAlready {
+  display: flex;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 20px;
+  color: rgb(140, 140, 140);
+  text-align: center;
+  margin: 20px 0px 0px;
+}
+
+.modalMore {
+  text-align: center;
+}
