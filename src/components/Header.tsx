@@ -17,6 +17,9 @@ const customStyles = {
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
     },
+    overlay: {
+
+    }
   };
 
 
@@ -34,20 +37,20 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.contents}>
-                <img src={logo} width="198px" height="38.03px"></img>
+                <img src={logo} style={{width:"198px", height:"38.03px"}}/>
                 <nav className={styles.navigation}>
                     {/* <BrowserRouter> */}
                     <div>
                         <ul>
-                        <Link to='movie'><li>영화</li></Link>
+                        <li><Link to='movie'>영화</Link></li>
                         <Link to='tv'><li>TV</li></Link>
                         <Link to='book'><li>책</li></Link>
                         <Link to='webtoon'><li>웹툰</li></Link>
                         </ul>
                         <div className={styles.right}>
-                        <input type="string" onChange={onOrderChange} placeholder='콘텐츠, 인물, 컬렉션, 유저를 검색해보세요. '></input>
+                        <input type="text" onChange={onOrderChange} placeholder='콘텐츠, 인물, 컬렉션, 유저를 검색해보세요. '/>
                         {login!=20 &&
-                            <p onClick={() => {setModal(true); setLogin(20);}}>로그인</p>
+                            <button onClick={() => {setModal(true); setLogin(20);}}>로그인</button>
                         }
                         {login==20 &&
                             <Link to="score"><p>평가하기</p></Link>
@@ -59,7 +62,7 @@ const Header = () => {
                                 <Signup/>
                             }
                         </Modal>
-                        <Link to="mypage"><button>마이페이지</button></Link>
+                            <button><Link to="mypage">마이페이지</Link></button>
                         </div>
                     </div>
                     {/* </BrowserRouter> */}

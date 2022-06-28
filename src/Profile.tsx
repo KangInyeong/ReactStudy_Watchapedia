@@ -1,15 +1,15 @@
 import React from 'react';
 
 type ProfileProps = {
-    username: string;
-    name: string;
-  };
+  username: string;
+  userimg: string;
+};
 
-const Profile: React.FC<ProfileProps> = ({ username, name }) => {
+const Profile: React.FC<ProfileProps> = ({ username, userimg }) => {
   return (
     <div>
       <b>{username}</b>&nbsp;
-      <span>({name})</span>
+      <img src={userimg}></img>
     </div>
   );
 };
